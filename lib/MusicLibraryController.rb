@@ -1,3 +1,4 @@
+require 'pry'
 class MusicLibraryController
   attr_accessor :path 
     def initialize(path='./db/mp3s')
@@ -5,6 +6,7 @@ class MusicLibraryController
     MusicImporter.new(path).import
   end
   def call
+    #binding.pry
      input = gets.strip
      if input != exit
      puts "Welcome to your music library!"
