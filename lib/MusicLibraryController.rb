@@ -6,7 +6,6 @@ class MusicLibraryController
     MusicImporter.new(path).import
   end
   def call
-     def call
     input = ""
     until input == "exit"
       puts "Please enter action"
