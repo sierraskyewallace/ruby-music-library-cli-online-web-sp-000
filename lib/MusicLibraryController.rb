@@ -6,7 +6,7 @@ class MusicLibraryController
     MusicImporter.new(path).import
   end
   def call
-    #binding.pry
+    binding.pry
      input = gets.strip
      if input != exit
      puts "Welcome to your music library!"
